@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  background-image: url("images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fff3f6;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text span {
+  color: #ff4d79;
+}
+
+.hero-text button {
+  background: #ff4d79;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* OFFERS */
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px;
+}
+
+.offer {
+  width: 180px;
+  height: 180px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hair { background: #8b1c1c; }
+.skin { background: #222; }
+.nails { background: #ff6b6b; }
+
+/* GALLERY */
+.gallery-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+/* FEATURES */
+.features {
+  background: #fff0f5;
+  padding: 60px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* MAP */
+.map-section {
+  padding: 60px 0;
+  background: linear-gradient(to right, #fff0f5, #ffe4ec);
+  text-align: center;
+}
+
+.map-section iframe {
+  width: 95%;
+  height: 450px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.modal-content button {
+  background: #ff4d79;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px;
+    background-size: contain;
+  }
+
+  .offers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+}
+

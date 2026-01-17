@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- SEO META -->
+<title>Best Bridal Makeup in Lucknow | Y.S. Makeup Studio Jankipuram</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Y.S. Makeup Studio – Best bridal and groom makeup studio in Jankipuram, Lucknow. 4.8⭐ rated salon for bridal makeup, hair, skin, manicure & premium beauty services. Book now!">
+
+<meta name="keywords" content="Bridal Makeup Lucknow, Best Makeup Artist Jankipuram, Groom Makeup Lucknow, Beauty Parlour in Lucknow, Wedding Makeup Artist Lucknow">
+
+<meta name="author" content="Y.S. Makeup Studio">
+<meta name="robots" content="index, follow">
+
+<!-- SOCIAL PREVIEW -->
+<meta property="og:title" content="Y.S. Makeup Studio | Best Bridal Makeup in Lucknow">
+<meta property="og:description" content="Premium bridal & groom makeup studio in Lucknow. Book your makeover today!">
+<meta property="og:image" content="images/hero.jpg">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>A Step To Your <span>Best Self ❤️</span></h1>
+    <p>Starts with our Premium Beauty Services</p>
+    <button onclick="openBooking()">Book Now</button>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="offers">
+  <div class="offer hair" onclick="openBooking()">HAIR<br><small>Starts ₹399</small></div>
+  <div class="offer skin" onclick="openBooking()">SKIN<br><small>Starts ₹499</small></div>
+  <div class="offer nails" onclick="openBooking()">NAILS<br><small>Starts ₹199</small></div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <h2>✨ Our Work</h2>
+  <div class="gallery">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+    <img src="images/gallery3.jpg">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>💖 Why Choose Us</h2>
+  <div class="feature-grid">
+    <div>⭐ 4.8 Rated Studio</div>
+    <div>💄 Professional Staff</div>
+    <div>🎀 Bridal Specialists</div>
+    <div>📍 Prime Location</div>
+    <div>📞 Easy Booking</div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <h2>📍 Visit Us – Y.S. Makeup Studio</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Y.S.+Makeup+Studio+Jankipuram+Lucknow&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- BOOKING POPUP -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeBooking()" class="close">×</span>
+    <h2>💄 Book Appointment</h2>
+
+    <form onsubmit="sendWhatsApp(event)">
+      <input id="name" type="text" placeholder="Full Name" required>
+      <input id="phone" type="tel" placeholder="Phone Number" required>
+      <input id="date" type="date" required>
+
+      <select id="service">
+        <option>Bridal Makeup</option>
+        <option>Groom Makeup</option>
+        <option>Hair Treatment</option>
+        <option>Manicure / Pedicure</option>
+      </select>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/916393780256" target="_blank">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
